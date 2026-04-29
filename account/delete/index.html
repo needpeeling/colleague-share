@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proveal | Account Deletion</title>
+    <script
+      src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="delete.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Proveal</h2>
+      <h3>Account Deletion</h3>
+      <div id="ui-unauthenticated">
+        <p>
+          To protect your data, please log in to verify you own the account you
+          wish to delete.
+        </p>
+        <button class="btn-login" id="btn-login" disabled>
+          Initializing...
+        </button>
+      </div>
+
+      <div id="ui-authenticated" style="display: none">
+        <p>Verified as: <br /><strong id="user-email"></strong></p>
+        <p style="color: #666; font-size: 0.9em">
+          Clicking below will send a final deletion request to the Proveal team.
+        </p>
+
+
+        <button type="submit" class="btn-delete" id="btn-delete">
+          Permanently Delete My Data
+        </button>
+      </div>
+    </div>
+
+    <script src="delete.js"></script>
+  </body>
+</html>

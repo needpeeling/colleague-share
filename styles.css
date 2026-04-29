@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ececec;
+}
+
+.container-links {
+    min-width: 30vw;
+    display: flex;
+}
+
+.container-links a {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: .5rem;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destructive {
+  background-color: #e74c3c;
+  color: white;
+}

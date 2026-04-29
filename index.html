@@ -1,35 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Colleague App</title>
-    <meta property="og:title" content="Check out this post on Colleague" />
-    <meta property="og:description" content="A colleague is sharing some thoughts..." />
-    <meta property="og:image" content="https://your-github-username.github.io/your-repo/assets/logo.png" />
-    <meta property="og:type" content="website" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-
-    <script>
-        window.onload = function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const postId = urlParams.get('post');
-
-            if (postId) {
-                const appUrl = "colleague://posts/" + postId;
-                window.location.href = appUrl;
-                setTimeout(function() {
-                    console.log("App didn't open. User might not have it installed.");
-                    // window.location.href = "link to app store ..."; 
-                }, 2000);
-            }
-        };
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Colleague | Web Portal</title>
 </head>
 <body>
-    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        <h2>Opening Colleague...</h2>
-        <p>If the app doesn't open automatically, <a href="colleague://">click here</a>.</p>
+    <h1>Colleague</h1>
+    <div class="container-links">
+        <a class="destructive" href="./account/delete/index.html">Delete Account</a>
     </div>
+    <footer>&copy; 2026 Colleague App</footer>
 </body>
 </html>
